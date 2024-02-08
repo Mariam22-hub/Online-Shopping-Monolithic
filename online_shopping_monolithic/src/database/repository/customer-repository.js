@@ -16,9 +16,11 @@ class CustomerRepository {
         phone,
         address: [],
       });
+
       const customerResult = await customer.save();
       return customerResult;
-    } catch (err) {
+    } 
+    catch (err) {
       throw new APIError(
         "API Error",
         STATUS_CODES.INTERNAL_ERROR,
@@ -45,7 +47,8 @@ class CustomerRepository {
       }
 
       return await profile.save();
-    } catch (err) {
+    } 
+    catch (err) {
       throw new APIError(
         "API Error",
         STATUS_CODES.INTERNAL_ERROR,

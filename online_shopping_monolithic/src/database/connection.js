@@ -11,7 +11,8 @@ module.exports = async() => {
         });
         console.log('Db Connected');
         
-    } catch (error) {
+    } 
+    catch (error) {
         console.log('Error ============')
         console.log(error);
         process.exit(1);

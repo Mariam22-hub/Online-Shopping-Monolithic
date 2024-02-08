@@ -7,6 +7,7 @@ const StartServer = async() => {
 
     const app = express();
     
+    // Create your database and add it's url to the .env file
     await databaseConnection();
     
     await expressApp(app);
